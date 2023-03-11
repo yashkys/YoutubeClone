@@ -9,6 +9,7 @@
         android:layout_height="?attr/actionBarSize"
         android:orientation="horizontal"
         android:padding="8dp"
+        android:elevation="1dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -65,24 +66,47 @@
                 android:focusable="true"
                 android:src="@drawable/ic_baseline_search_24"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/profile_icon"
+                app:layout_constraintEnd_toStartOf="@+id/profile_icon_card_view"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <ImageView
-                android:id="@+id/profile_icon"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_alignParentEnd="true"
-                android:layout_marginHorizontal="6dp"
-                android:background="@drawable/profile_circle_background"
+            <androidx.cardview.widget.CardView
+                android:id="@+id/profile_icon_card_view"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:elevation="0dp"
+                android:layout_gravity="center_vertical"
+                app:cardCornerRadius="150dp"
                 android:clickable="true"
-                android:contentDescription="@string/profile"
-                android:focusable="true"
-                android:padding="2dp"
-                android:src="@drawable/ic_baseline_person_24"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                android:focusable="true">
+
+                <ImageView
+                    android:id="@+id/profile_icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/channel_logo"
+                    android:contentDescription="@string/profile"/>
+
+            </androidx.cardview.widget.CardView>
+
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:layout_marginHorizontal="6dp"-->
+<!--                android:background="@drawable/profile_circle_background"-->
+<!--                android:clickable="true"-->
+<!--                android:contentDescription="@string/profile"-->
+<!--                android:focusable="true"-->
+<!--                android:padding="2dp"-->
+<!--                android:src="@drawable/ic_baseline_person_24"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

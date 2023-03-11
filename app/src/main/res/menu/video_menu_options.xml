@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_save_to_watch_later"
+        android:title="@string/save_to_watch_later"
+        app:showAsAction="never"
+        android:icon="@drawable/ic_clock" />
+    <item
+        android:id="@+id/action_save_to_playlist"
+        android:title="@string/save_to_playlist"
+        app:showAsAction="never"
+        android:icon="@drawable/ic_baseline_video_library_24" />
+    <item
+        android:id="@+id/action_download_video"
+        android:title="@string/download_video"
+        app:showAsAction="never"
+        android:icon="@drawable/ic_download" />
+    <item
+        android:id="@+id/action_share"
+        android:title="@string/share"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_share">
+        <menu>
+            <item
+                android:id="@+id/action_facebook"
+                android:title="@string/action_facebook"
+                android:icon="@drawable/ic_facebook" />
+            <item
+                android:id="@+id/action_twitter"
+                android:title="@string/action_twitter"
+                android:icon="@drawable/ic_twitter" />
+            <item
+                android:id="@+id/action_email"
+                android:title="@string/action_email"
+                android:icon="@drawable/ic_email" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/action_not_interested"
+        android:title="@string/not_interested"
+        app:showAsAction="never"
+        android:icon="@drawable/ic_not_interested"/>
+    <item
+        android:id="@+id/action_do_not_recommend_channel"
+        android:title="@string/don_t_recommend_channel"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_report"
+        android:title="@string/report"
+        app:showAsAction="never"
+        android:icon="@drawable/ic_report"/>
+
+</menu>

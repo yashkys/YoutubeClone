@@ -9,4 +9,17 @@
     <string name="search">Search</string>
     <string name="profile">Profile</string>
     <string name="title_create">Create</string>
+    <string name="video_thumbnail">Video Thumbnail</string>
+    <string name="channel_logo">Channel Logo</string>
+    <string name="video_menu_options">Video Menu Options</string>
+    <string name="report">Report</string>
+    <string name="don_t_recommend_channel">Don\'t recommend channel</string>
+    <string name="not_interested">Not interested</string>
+    <string name="download_video">Download Video</string>
+    <string name="save_to_playlist">Save to playlist</string>
+    <string name="save_to_watch_later">Save to Watch Later</string>
+    <string name="action_email">Email</string>
+    <string name="action_twitter">Twitter</string>
+    <string name="action_facebook">Facebook</string>
+    <string name="share">Share</string>
 </resources>
